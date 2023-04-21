@@ -2,34 +2,48 @@
 <html>
 <head>
     <title>stella dikmans portfolio</title>
-    
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
 <body>
   <header class="Marquee">
     <h1 class="my0 md-pr1">
       <marquee class="Block--white height" loop="-1" scrollamount="8">
-        In god we trust, others we monitor :)      </marquee>
+        welcome to my performative habitat      </marquee>
     </h1>
   </header>
-  <a href="#menu" class="NavToggler js-nav-toggler">Menu</a>
-<nav id="menu" class="Nav js-nav">
-  <ul class="grid">
-              <li class="col col-8 md-col-2 lg-col-1 md-pl2 md-pr1 ">
-        <a class="Nav-item Block--yellow pa2" href="http://www.does-work.com/about">
-          DOES Know        </a>
-      </li>
-                <li class="col col-8 md-col-2 lg-col-1 md-px1 is-active">
-        <a class="Nav-item Block--yellow pa2" href="http://www.does-work.com">
-          DOES Work        </a>
-      </li>
-                <li class="col col-8 md-col-2 lg-col-1 md-px1 ">
-        <a class="Nav-item Block--yellow pa2" href="http://www.does-work.com/case-studies">
-          DOES Curate        </a>
-      </li>
-                <li class="col col-8 md-col-2 lg-col-1 md-px1 ">
-        <a class="Nav-item Block--yellow pa2" href="http://www.does-work.com/does-edit">
-          DOES Edit        </a>
-      </li>
-            </ul>
-</nav>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 15px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 15px solid rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      font-size: 15px;
+      text-align: center;
+    }
+    </style>
+
+<body>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+    
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+    
+    <div class="grid-container">
+      <div class="grid-item">img</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>  
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>  
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>  
+    </div>
+    
+    </body>
