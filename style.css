@@ -1,6 +1,7 @@
-.content {
-    width: 500px;
-    margin: auto;
-    padding: 50 px;s
-    border: thin solid black;
-}
+:root {
+    font-size: 1em;
+    font-family: Helvetica, sans-serif;
+    line-height: 1;
+    box-sizing: border-box
+  }
+  
