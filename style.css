@@ -4,3 +4,15 @@
     line-height: 1;
     box-sizing: border-box
   }
+
+  body {
+    background-color: lightblue;
+  }
+
+body  {
+    display: grid;
+    gid-gap: 1em;
+  }
+
+  
+
