@@ -9,9 +9,9 @@
     background-color: lightblue;
   }
 
-body  {
+  body  {
     display: grid;
-    gid-gap: 1em;
+    grid-gap: 1em;
   }
 
   
