@@ -9,10 +9,27 @@
     background-color: lightblue;
   }
 
-  body  {
-    display: grid;
-    grid-gap: 1em;
+  .grid {
+    position: relative;
   }
 
-  
+  .grid--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 
+  .Thumb {
+    display: block;
+    text-decoration: none;
+  }
+
+  a {
+    color: #000;
+  }
