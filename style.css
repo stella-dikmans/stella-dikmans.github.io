@@ -71,10 +71,12 @@ footer {
 
 .fab.fa-instagram:before {
     content: '\f16d';
+    font-family: "Font Awesome 5 Brands";
 }
 
 .fab.fa-linkedin:before {
     content: '\f08c';
+    font-family: "Font Awesome 5 Brands";
 }
 
 .fas {
@@ -85,4 +87,5 @@ footer {
 
 .fas.fa-envelope:before {
     content: '\f0e0';
+    font-family: "Font Awesome 5 Free";
 }
