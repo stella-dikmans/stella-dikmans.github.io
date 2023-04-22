@@ -1,4 +1,4 @@
-* {
+{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -46,4 +46,51 @@ img {
 
 .item:hover .overlay {
 	opacity: 1;
+}
+
+footer {
+	background-color: #f1f1f1;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-container a {
+	color: #333;
+	margin: 0 10px;
+	font-size: 24px;
+}
+
+.footer-container a:hover {
+	color: #007bff;
+}
+
+.fab {
+	display: inline-block;
+	font-size: inherit;
+}
+
+.fab.fa-instagram:before {
+	content: '\f16d';
+}
+
+.fab.fa-linkedin:before {
+	content: '\f08c';
+}
+
+.fas {
+	display: inline-block;
+	font-size: inherit;
+	margin-right: 5px;
+}
+
+.fas.fa-envelope:before {
+	content: '\f0e0';
 }
