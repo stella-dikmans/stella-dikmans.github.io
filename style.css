@@ -3,9 +3,9 @@
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
+    grid-auto-rows: flexible;
     grid-gap: 10px;
-    margin: 20px;
+    margin: 15px;
     max-height: calc(3 * (200px + 10px) - 10px);
     overflow: hidden;
 }
