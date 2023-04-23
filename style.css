@@ -41,55 +41,49 @@
   }
 
   /* Show the descriptive text when hovering over an image */
-  .picture {
-    position: relative;
-    overflow: hidden;
-}
-
-.picture img {
-    display: block;
+  .picture:hover .description {
+    opacity: 1;
+  }
+  
+  .picture img {
     width: 100%;
     height: auto;
-    transition: all 0.2s ease-in-out;
-}
-
-.picture:hover img {
-    transform: scale(1.1);
-}
-
-.description {
+    display: block;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
-    box-sizing: border-box;
-}
-
-.picture:hover .description {
-    opacity: 1;
-}
-
-.description-header h2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  .description-header h2 {
     margin: 0;
-}
-
-.description-body p {
-    margin: 0;
-}
-
-.description-footer p {
-    margin: 0;
-    text-align: right;
-}
+  }
+  
+  .description-footer {
+    margin-top: 20px;
+  }
+  
+  .description-footer a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .description-footer a:hover {
+    text-decoration: underline;
+  }
 
 
 
