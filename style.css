@@ -44,20 +44,20 @@
   .picture {
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .picture img {
+.picture img {
     display: block;
     width: 100%;
     height: auto;
     transition: all 0.2s ease-in-out;
-  }
+}
 
-  .picture:hover img {
+.picture:hover img {
     transform: scale(1.1);
-  }
+}
 
-  .description {
+.description {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,24 +72,25 @@
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-  }
+}
 
-  .picture:hover .description {
+.picture:hover .description {
     opacity: 1;
-  }
+}
 
-  .description-header h2 {
+.description-header h2 {
     margin: 0;
-  }
+}
 
-  .description-body p {
+.description-body p {
     margin: 0;
-  }
+}
 
-  .description-footer p {
+.description-footer p {
     margin: 0;
     text-align: right;
-  }
+}
+
 
 
   /* Style the footer */
