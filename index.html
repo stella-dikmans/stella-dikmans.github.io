@@ -2,8 +2,20 @@
 <html>
 <head>
 	<title>stella dikmans portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
+    <script>
+      function toggleText(imageId) {
+        var imageText = document.getElementById(imageId + "-text");
+        if (imageText.style.display === "none") {
+          imageText.style.display = "block";
+        } else {
+          imageText.style.display = "none";
+        }
+      }
+    </script>
 </head>
+
 <body>
     <header class="Marquee">
         <h1 class="my0 md-pr1">
@@ -17,49 +29,50 @@
 		<p>Hi, my name is Stella (she/her). I am a 25-year-old German-Dutch individual who grew up in Berlin. With a background in sociology and architectural design, I am passionate about understanding how social structures are embedded in an ever-changing global environment and how we can collectively react to ongoing environmental changes and climate catastrophes. Through my work, I aim to explore transformation processes and investigate possible future scenarios to imagine collective solutions to global challenges. I believe that exchange and discussion are key to opening up new possibilities for seeing and thinking, and promoting heterogeneous coexistences. I am committed to creating social spaces and pushing the boundaries of what's possible.</p>
 	</header>
 	
-	<div class="container">
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 1">
-			<div class="overlay">Description 1</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 2">
-			<div class="overlay">Description 2</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 3">
-			<div class="overlay">Description 3</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 4">
-			<div class="overlay">Description 4</div>
-		</div>
-        <div class="item">
-			<img src="../imagery/trial.png" alt="Image 1">
-			<div class="overlay">Description 5</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 2">
-			<div class="overlay">Description 6</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 3">
-			<div class="overlay">Description 7</div>
-		</div>
-		<div class="item">
-			<img src="../imagery/trial.png" alt="Image 4">
-			<div class="overlay">Description 8</div>
-		</div>
-	</div>
+    <main>
+        <div class="image-grid">
+           <div class="image-container">
+                <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
+                <div class="image-text" id="image1-text" style="display:none;">
+                    <h2>Image 1</h2>
+                    <p>This is the description of image 1.</p>
+                </div>
+          </div>
+          <div class="image-container">
+            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
+            <div class="image-text" id="image1-text" style="display:none;">
+                <h2>Image 1</h2>
+                <p>This is the description of image 1.</p>
+            </div>
+          </div>
+        </div>
+    </main>
 
     <footer>
-		<div class="footer-container">
-			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="script.js"></script>
+        <div class="footer-icons">
+          <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/yourusername/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/yourusername/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+      
+    <script>
+        // Handle click events for the icons
+        const emailIcon = document.querySelector('.fa-envelope');
+        emailIcon.addEventListener('click', function() {
+          window.location.href = 'mailto:youremail@example.com';
+        });
+        
+        const instagramIcon = document.querySelector('.fa-instagram');
+        instagramIcon.addEventListener('click', function() {
+          window.open('https://www.instagram.com/yourusername/', '_blank');
+        });
+        
+        const linkedinIcon = document.querySelector('.fa-linkedin');
+        linkedinIcon.addEventListener('click', function() {
+          window.open('https://www.linkedin.com/in/yourusername/', '_blank');
+        });
+    </script>
+    
 </body>
 </html>
