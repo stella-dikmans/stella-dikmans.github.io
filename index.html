@@ -4,16 +4,6 @@
 	<title>stella dikmans portfolio website</title>
 	<link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
-    <script>
-      function toggleText(imageId) {
-        var imageText = document.getElementById(imageId + "-text");
-        if (imageText.style.display === "none") {
-          imageText.style.display = "block";
-        } else {
-          imageText.style.display = "none";
-        }
-      }
-    </script>
 </head>
 
 <body>
@@ -31,79 +21,55 @@
 	
     <main>
         <div class="image-grid">
-
-           <div class="image-container">
-                <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-                <div class="image-text" id="image1-text" style="display:none;">
-                    <h2>Image 1</h2>
-                    <p>This is the description of image 1.</p>
-                </div>
-          </div>
-          
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
+          <div class="image-row">
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 1">
+              <div class="image-title">
                 <h2>Image 1</h2>
                 <p>This is the description of image 1.</p>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 2">
+              <div class="image-title">
+                <h2>Image 2</h2>
+                <p>This is the description of image 2.</p>
+              </div>
             </div>
           </div>
-          
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
-                <p>This is the description of image 1.</p>
+          <div class="image-row">
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 3">
+              <div class="image-title">
+                <h2>Image 3</h2>
+                <p>This is the description of image 3.</p>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 4">
+              <div class="image-title">
+                <h2>Image 4</h2>
+                <p>This is the description of image 4.</p>
+              </div>
             </div>
           </div>
-    
-          <div class="image-container">
-                <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-                <div class="image-text" id="image1-text" style="display:none;">
-                    <h2>Image 1</h2>
-                    <p>This is the description of image 1.</p>
-                </div>
-          </div>
-
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
+          <div class="image-row">
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 1">
+              <div class="image-title">
+                <h2>Image 5</h2>
                 <p>This is the description of image 1.</p>
-          </div>
-
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
-                <p>This is the description of image 1.</p>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="../imagery/trial.png" alt="Image 2">
+              <div class="image-title">
+                <h2>Image 6</h2>
+                <p>This is the description of image 2.</p>
+              </div>
             </div>
           </div>
-
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
-                <p>This is the description of image 1.</p>
-            </div>
-          </div>
-
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
-                <p>This is the description of image 1.</p>
-            </div>
-          </div>
-
-          <div class="image-container">
-            <img src="../imagery/trial.png" alt="Image 1" onclick="toggleText('image1')">
-            <div class="image-text" id="image1-text" style="display:none;">
-                <h2>Image 1</h2>
-                <p>This is the description of image 1.</p>
-            </div>
-          </div>
-          
-      </div>
+        </div>
     </main>
 
     <footer>
