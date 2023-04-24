@@ -19,35 +19,7 @@
     margin: 0;
     font-size: 36px;
   }
-
-
-   /* Style the contact details */
-  .intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-  }
-
-  .intro-text {
-    width: 60%;
-  }
-
-  .intro-contact {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .intro-contact img {
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-  }
-
-  
-  
+    
   /* Style the main content area */
   main {
     padding: 20px;
