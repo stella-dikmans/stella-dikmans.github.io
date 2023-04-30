@@ -62,32 +62,39 @@
     opacity: 0;
     transition: opacity 0.2s ease-out;
     color: #9b91c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
   }
   
   .description-header h2 {
     margin: 0;
     color: #9b91c1;
+    max-width: 100%;
   }
   
   .description-footer {
     margin-top: 20px;
     color: #9b91c1;
+    max-width: 100%;
   }
   
   .description-footer a {
     color: #9b91c1;
-    font-size: 16px;
     text-decoration: none;
   }
   
   .description-footer a:hover {
     text-decoration: underline;
     color: #9b91c1;
+    max-width: 100%;
   }
 
   #links {
     text-decoration: none; /* remove underline */
+    color: #2e294e
   }
-  
-
   
