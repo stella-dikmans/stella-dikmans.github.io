@@ -1,23 +1,19 @@
-/* Set basic styles for the entire page */
-* {
-    box-sizing: border-box;
-  }
-  
+  /* Style the general set up*/
   body {
     margin: 0;
     font-family: sans-serif;
   }
-  
-  /* Style the header */
+
+  /* Style the header*/
   header {
     background-color: #fff;
-    color: #c5cae1;
+    color:  	#9b91c1;
     padding: 20px;
   }
   
   h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
   }
     
   /* Style the main content area */
@@ -65,60 +61,33 @@
     overflow-y: auto;
     opacity: 0;
     transition: opacity 0.2s ease-out;
+    color: #9b91c1;
   }
   
   .description-header h2 {
     margin: 0;
+    color: #9b91c1;
   }
   
   .description-footer {
     margin-top: 20px;
+    color: #9b91c1;
   }
   
   .description-footer a {
-    color: #333;
+    color: #9b91c1;
     font-size: 16px;
     text-decoration: none;
   }
   
   .description-footer a:hover {
     text-decoration: underline;
+    color: #9b91c1;
   }
 
+  #links {
+    text-decoration: none; /* remove underline */
+  }
+  
 
-
-  /* Style the footer */
-  footer {
-    background-color: #eee;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-icons a {
-    margin: 0 10px;
-    color: #333;
-    font-size: 24px;
-  }
-  
-  /* Style the icons */
-  .fa-envelope:before {
-    content: "\f0e0";
-  }
-  
-  .fa-instagram:before {
-    content: "\f16d";
-  }
-  
-  .fa-linkedin:before {
-    content: "\f08c";
-  }
   

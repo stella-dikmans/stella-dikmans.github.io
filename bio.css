@@ -1,0 +1,26 @@
+  /* Style the general set up*/
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #9b91c1;
+  }
+
+  /* Style the header*/
+  header {
+    background-color: #9b91c1;
+    color:  	#fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  #links {
+    text-decoration: none; /* remove underline */
+    color: #fff
+  }
+  
+
+  
