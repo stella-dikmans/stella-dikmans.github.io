@@ -4,6 +4,9 @@
     font-family: sans-serif;
   }
 
+
+
+
   /* Style the header*/
   header {
     background-color: #fff;
@@ -15,7 +18,10 @@
     margin: 0;
     font-size: 30px;
   }
-    
+   
+  
+
+
   /* Style the main content area */
   main {
     padding: 20px;
@@ -35,6 +41,16 @@
 	position: relative;
 	cursor: pointer;
   }
+
+
+
+
+
+
+
+
+
+
 
   /* Show the descriptive text when hovering over an image */
   .picture:hover .description {
@@ -93,8 +109,14 @@
     max-width: 100%;
   }
 
+
+
+
+
+  /* style the links */
   #links {
     text-decoration: none; /* remove underline */
     color: #2e294e
   }
+
   
