@@ -6,6 +6,7 @@
 
   /* Style the header*/
   header {
+    font-weight: lighter;
     background-color: #fff;
     color:  	#9b91c1;
     padding: 20px;
@@ -14,6 +15,7 @@
   h1 {
     margin: 0;
     font-size: 30px;
+    font-weight: lighter;
   }
 
   footer {
@@ -91,6 +93,7 @@
     margin: 0;
     color: #9b91c1;
     max-width: 100%;
+    font-weight: lighter;
   }
   
   .description-footer {
