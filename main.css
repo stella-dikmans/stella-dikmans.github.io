@@ -2,6 +2,7 @@
   body {
     margin: 0;
     font-family: sans-serif;
+    padding: 40;
   }
 
   /* Style the header*/
@@ -9,13 +10,14 @@
     font-weight: lighter;
     background-color: #fff;
     color:  	#9b91c1;
-    padding: 20px;
+    padding: 40px;
   }
   
   h1 {
     margin: 0;
     font-size: 30px;
     font-weight: lighter;
+    padding: 40;
   }
 
   footer {
@@ -27,7 +29,7 @@
 
   /* Style the main content area */
   main {
-    padding: 20px;
+    padding: 40px;
   }
 
   .picture-grid {
