@@ -8,19 +8,48 @@
 
   <body class="main-page">
 
-      <header class="Marquee">
-        <h1 class="my0 md-pr1">
-        <marquee class="Block--white height" loop="-1" scrollamount="8"></marquee>
-        </h1>
-      </header>
+        <style>
+          .banner {
+              position: relative;
+              white-space: nowrap;
+              overflow: hidden;
+              animation: scrollBanner 5s linear;
+              animation-fill-mode: forwards;
+              padding: 40px;
+              background-color: #9b91c1;
+              color: white;
+              opacity: 70%;
+              font-size: 20px;
+              font-weight: lighter;
+          }
+
+          @keyframes scrollBanner {
+              0% { transform: translateX(100%);}
+              100% { transform: translateX(0); }
+          }
+          </style>
+
+      <div class="banner">
+          <span>non-academic academia</span>
+      </div>
 
       <header class="header">
-          <div class="header__left"><h1> <a href="index.html" id="links"> <span style="color: #00ff00;"> <br>stella dikmans</span></a></h1></div>
+        <div class="header__left"> <h1><a href="index.html" id="links"> <span style="color: #00ff00;">stella dikmans</span></a></h1></div>
       </header>
-
-
+      
       <main>
-        <p>in progress</p>
+        <p>
+          <b><span style="color: #2e294e;">2023</span></b> <br><br>
+          Research paper for conference "imaginar mundos possibles" at Disseny Hub Barcelona:
+          <a href="https://docs.google.com/document/d/1YKNxHCwDzafhJ7tD9jhabJ-VFum2zuKZ/edit?usp=sharing" target="_blank" id="links">
+            <span style="color: #00ff00; opacity: 70%;">
+              <i>Story-taling about individual agency within a polyphonic mesh of fictional realities.</i>
+            </span>
+          </a>
+          co-writer: Myrto-Eirini Pappa
+        </p>
+        
+        <p> <br> </p>
       </main>
 
 

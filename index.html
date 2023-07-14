@@ -8,12 +8,30 @@
 
 <body class="main-page">
     
-    <header class="Marquee">
-        <h1 class="my0 md-pr1">
-        <marquee class="Block--white height" loop="-1" scrollamount="8">welcome to my performative habitat</marquee>
-        </h1>
-    </header>
+        <style>
+        .banner {
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollBanner 5s linear;
+            animation-fill-mode: forwards;
+            padding: 40px;
+            background-color: #fff;
+            color: #9b91c1;
+            opacity: 70%;
+            font-size: 25px;
+            font-weight: lighter;
+        }
 
+        @keyframes scrollBanner {
+            0% { transform: translateX(100%);}
+            100% { transform: translateX(0); }
+        }
+        </style>
+
+    <div class="banner">
+        <span>welcome to my performative habitat</span>
+    </div>
 
     <header class="header">
         <div class="header__left"> <h1>stella dikmans</h1></div>
@@ -29,7 +47,7 @@
         background-color: #fff;
         color: #9b91c1;
         height: 60px;
-        padding: 0 40px;
+        padding: 40px;
       }
       
       .header__left {
