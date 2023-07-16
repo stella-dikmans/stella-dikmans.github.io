@@ -139,6 +139,31 @@
   }
 
 
+  /* For mobile devices */
+  @media (max-width: 767px) {
+    .picture {
+      position: relative;
+    }
+
+    .description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px; /* Adjust this padding to your preference */
+      background-color: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+      color: #9b91c1;
+      box-sizing: border-box;
+      font-weight: lighter;
+    }
+
+    .picture:active .description {
+      opacity: 1;
+    }
+  }
+
 
   /* style the links */
   #links {
