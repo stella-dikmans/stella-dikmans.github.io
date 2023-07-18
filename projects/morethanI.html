@@ -1,120 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MOC</title>
-	<link rel="stylesheet" href="../projects.css">
-</head>
 
-<body class="main-page">
-    <header class="header">
-        <div class="header__left"><h1> <a href="../index.html" id="links"> <span style="color: #00ff00;">stella dikmans</span></a></h1></div>
-      </header>
-      
-      <style>
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #9b91c1;
-        color: #fff;
-        height: 60px;
-        padding: 0 20px;
-      }
-      
-      .header__left {
-        text-align: left;
-      }
-      
-      .header__right {
-        text-align: right;
-      }
-      </style>
-</head>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>more thAn I</title>
+      <link rel="stylesheet" href="../projects.css">
+    </head>
 
-<body>
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="../imagery/mtI01.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-    <div class="mySlides fade">
-        <img src="../imagery/mtI02.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-    <div class="mySlides fade">
-        <img src="../imagery/mtI03.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-    <div class="mySlides fade">
-        <img src="../imagery/mtI04.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-    <div class="mySlides fade">
-        <img src="../imagery/mtI05.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-        <div class="mySlides fade">
-        <img src="../imagery/mtI06.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
+    <body class="main-page">
+
+        <div class="banner-container">
+          <div class="banner">
+              <span>glad that you have found into one performative habitat</span>
+          </div>
         </div>
-        <div class="mySlides fade">
-        <img src="../imagery/mtI07.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-        </div>
-        <div class="mySlides fade">
-        <img src="../imagery/mtI08.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
-        </div>
-        <div class="mySlides fade">
-        <img src="../imagery/mtI09.png" style="width:50%;">
-            <div class="text"></div>
-    </div>
+        
+        <header>
+          <a href="../index.html" id="links"> 
+          <span style="color: #00ff00;">stella dikmans</span>
+          </a>
+        </header>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+        <main>
 
-</div>
-<br>
+          <div class="canvas">
+            <div class="item" style="grid-column: 1 / span 2; grid-row: 5 / span 2;">
+                <img src="../imagery/habitats/mtI/mtI01.png" alt="at work">
+            </div>
+            <div class="item" style="grid-column: 2 / span 1; grid-row: 3 / span 1;">
+                <img src="../imagery/habitats/mtI/mtI02.png" alt="blackboard">
+            </div>
+            <div class="item" style="grid-column: 3 / span 2; grid-row: 1 / span 2;">
+                <img src="../imagery/habitats/mtI/mtI03.png" alt="cosmocaixa">
+            </div>
+            <div class="item" style="grid-column: 3 / span 2; grid-row: 7 / span 1;">
+                <img src="../imagery/habitats/mtI/mtI04.png" alt="close up">
+            </div>
+            <div class="item" style="grid-column: 1 / span 2; grid-row: 2 / span 1;">
+                <img src="../imagery/habitats/mtI/mtI05.png" alt="close up">
+            </div>
+            <div class="item" style="grid-column: 1 / span 2; grid-row: 4 / span 2;">
+                <img src="../imagery/habitats/mtI/mtI06.png" alt="at work">
+            </div>
+            <div class="item" style="grid-column: 1 / span 1; grid-row: 5 / span 1;">
+                <img src="../imagery/habitats/mtI/mtI07.png" alt="at work">
+            </div>
+            <div class="item" style="grid-column: 2 / span 1; grid-row: 1 / span 2;">
+                <img src="../imagery/habitats/mtI/mtI08.png" alt="at work">
+            </div>
+            <div class="item" style="grid-column: 3 / span 2; grid-row: 6 / span 2;">
+                <img src="../imagery/habitats/mtI/mtI09.png" alt="at work">
+            </div>
+            <div class="item" style="grid-column: 1 / span 1; grid-row: 1 / span 1;">
+                <h1>we are...</h1>  
+                <p></p>
+            </div>
+            <div class="item" style="grid-column: 3 / span 2; grid-row: 3 / span 1;">
+                <h1>we are...</h1>
+                <p></p>
+            </div>
+          </div>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+        </main>
 
+      </div>
+    </body>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-</body>
 </html> 

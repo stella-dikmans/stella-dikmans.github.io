@@ -4,40 +4,64 @@
       font-family: sans-serif;
       background-color: #9b91c1;
       font-weight: lighter;
-
     }
 
-    /* Style the header*/
-    header {
-      font-weight: lighter;
-      background-color:#9b91c1;
-      padding: 40px;
-    }
-    
-    h1 {
-      margin: 0;
-      font-size: 30px;
-      font-weight: lighter;
+    /* Style the banner */
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
     }
 
-    /* Style the main content area */
-    main {
+    .banner {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scrollBanner 5s linear;
+      animation-fill-mode: forwards;
       padding: 40px;
       background-color: #9b91c1;
-      color:  	white;
+      color: #fff;
+      opacity: 70%;
+      font-size: 25px;
       font-weight: lighter;
     }
-  
-  
-    #links {
-      text-decoration: none; /* remove underline */
-      color: #2e294e
+
+    @keyframes scrollBanner {
+      0% { transform: translateX(100%);}
+      100% { transform: translateX(0); }
     }
 
-    #links1 {
-      text-decoration: none; /* remove underline */
-      color: #2e294e
-      
-    }
+  /* Style the header*/
+  header {
+    background-color: #9b91c1;
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Style the main content area */
+  main {
+    background-color: #9b91c1;
+    color:  	white;
+    font-weight: lighter;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  #links {
+    text-decoration: none; /* remove underline */
+    color: #2e294e
+  }
+
+  #links1 {
+    text-decoration: none; /* remove underline */
+    color: #2e294e
+  }
     
 
