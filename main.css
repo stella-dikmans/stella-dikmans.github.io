@@ -77,6 +77,33 @@
     padding-bottom: 5px;
   }
 
+  /* Style the hyperlink boxes*/
+  .title-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  .title-box {
+    padding: 5px 10px;
+    border: 0,5px solid #2e294e;
+    text-decoration: none;
+    color: #9b91c1;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  .title-box:hover {
+    background-color: #00ff00;
+    color: #2e294e;
+  }
+
+  .content-container {
+  /* Add appropriate styles for your content containers */
+  }
+
+
   /* Style the main content area */
   main {
     padding-left: 40px;
