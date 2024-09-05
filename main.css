@@ -16,20 +16,6 @@
     line-height: 1.6; 
   }
 
-    /* General styling for the title container */
-  .title-container {
-    position: fixed; /* Keeps the title in a fixed position relative to the viewport */
-    top: 0; /* Aligns the title to the top of the viewport */
-    right: 0; /* Aligns the title to the right of the viewport */
-    transform: translateY(50%); /* Centers the title vertically in the right side */
-    margin: 0;
-    padding: 20px;
-    font-size: 2rem;
-    color: white; /* Adjust color based on background */
-    background: transparent; /* Ensure no background color */
-    text-align: right; /* Align text to the right */
-    z-index: 10; /* Ensures the title appears above other content */
-  }
 
   /* Style the top navigation */
   .topnav {
