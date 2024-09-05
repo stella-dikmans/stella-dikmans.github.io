@@ -5,6 +5,7 @@ body {
     background-color: white;
     color: black;
     margin: 0;
+    line-height: 1.5em;
     display: flex;
     height: 100vh; /* Ensure the body takes the full height of the viewport */
 }
