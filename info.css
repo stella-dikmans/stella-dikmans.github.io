@@ -64,7 +64,7 @@ body {
   
   /* Image styles */
   .top-image {
-    width: 80%; /* Ensures the image takes up the full width of its container */
+    width: 50%; /* Ensures the image takes up the full width of its container */
     height: auto; /* Maintains the aspect ratio */
   }
 
