@@ -67,7 +67,7 @@ body {
 /* Style the links */
 .word-link {
     font-size: 2em; /* Increase font size for emphasis */
-    font-weight: bold;
+    font-weight: lighter;
     margin-bottom: 20px; /* Add spacing between links */
     color: black;
     text-decoration: none; /* Remove underline */
