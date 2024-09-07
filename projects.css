@@ -13,11 +13,11 @@ body {
 /* Illustration */
 .top-image-container {
   position: fixed; /* Fixes the position relative to the viewport */
-  top: 0; /* Aligns it to the top of the page */
-  left: 50%; /* Aligns it horizontally at the center */
-  transform: translateX(-50%); /* Centers the image by shifting it half its width to the left */
+  top: 1.5em; /* Aligns it to the top of the page */
+  left: 55%; /* Aligns it horizontally at the center */
+  transform: translateX(-45%); /* Centers the image by shifting it half its width to the left */
   z-index: 20; /* Ensures the image stays on top of other elements */
-  width: 20%; /* Adjust this value for your desired image size */
+  width: 15%; /* Adjust this value for your desired image size */
   height: auto; /* Maintains aspect ratio */
 }
 .top-image {
@@ -64,17 +64,6 @@ body {
   justify-content: center; /* Center the text vertically */
   padding-left: 40px; /* Add padding on the left */
 }
-.word-link {
-  font-size: 2em; /* Increase font size for emphasis */
-  font-weight: lighter;
-  margin-bottom: 20px; /* Add spacing between words */
-  color: black;
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth transition on hover */
-}
-.word-link:hover {
-  color: gray; /* Change color on hover */
-}
 .bottom-word-container {
   position: fixed;
   bottom: 40px; /* Distance from the bottom of the page */
@@ -92,52 +81,106 @@ body {
   color: gray; /* Change color on hover */
 }
 
-/* project & writing page specific */
-/* Style for the text section (menu) */
+/* General setup for the body */
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: white;
+  color: black;
+  margin: 0;
+  line-height: 1.5em;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Menu Section */
 .text-section {
   width: 250px; /* Fixed width for the menu */
-  position: fixed; /* Keep the menu fixed in place */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Center vertically */
+  position: fixed; /* Keeps the menu fixed in place */
+  top: 50%; /* Centers the menu vertically */
+  transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+  left: 0; /* Align to the left */
   padding: 40px;
   box-sizing: border-box;
-  height: 100%; /* Full height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center the text vertically */
+  height: 100vh; /* Full height for the menu */
   background: transparent; /* No background color */
-  z-index: 1; /* Ensure it stays on top */
+  z-index: 10; /* Ensure it stays on top */
+  overflow-y: auto; /* Allow scrolling in the menu if needed */
 }
 
-/* Style for the content container */
+/* Menu Styling */
+.menu {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+.menu > li {
+  margin-bottom: 15px; /* Add space between main menu items */
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+.menu a:hover {
+  color: gray; /* Change color on hover */
+}
+
+/* Submenu Styling */
+.submenu {
+  list-style-type: none;
+  padding-left: 20px; /* Indent sub-menu items */
+  margin-top: 5px;
+}
+.submenu li {
+  margin-bottom: 10px; /* Add space between sub-menu items */
+}
+.submenu a {
+  font-size: 1.2em; /* Smaller font for sub-menu items */
+}
+
+/* Content Container */
 .content-container {
-  margin-left: 250px; /* Space for the text section */
-  padding: 20px;
-  width: calc(100% - 250px); /* Fill the remaining width */
+  margin-left: 300px; /* Space for the fixed menu */
+  padding: 30vh 60px 20px 60px; /* Start content lower to match the middle of the page */
+  width: calc(100% - 300px); /* Fill remaining width */
   box-sizing: border-box;
-  height: 100%;
-  overflow-y: auto; /* Scroll if content overflows */
+  overflow-y: auto; /* Allow scrolling for long content */
 }
 
-/* Content sections */
+/* Content Sections */
 .content {
   display: none; /* Hide all content sections by default */
 }
 .content:target {
   display: block; /* Show the content section when it is the target */
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect */
 }
 
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 
-
-/* Mobiel Phone version - Ensure responsiveness */
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .text-section {
       width: 100%; /* Full width on smaller screens */
-      position: static; /* Make text section scrollable */
+      position: static; /* Remove fixed position */
+      top: auto;
+      transform: none;
+      height: auto; /* Allow menu to expand */
   }
-
-  .title-container, .content-container {
-      margin-left: 0; /* Remove left margin */
-      width: 100%; /* Full width on smaller screens */
+  .content-container {
+      margin-left: 0; /* No left margin */
+      width: 100%; /* Full width */
+      padding-top: 10vh; /* Adjust padding for smaller screens */
   }
 }
