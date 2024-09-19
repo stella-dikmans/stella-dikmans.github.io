@@ -1,6 +1,7 @@
 /* GENERAL */
 body {
   font-family: sans-serif;
+  font-size: 0.8em;
   font-weight: lighter;
   background-color: white;
   color: black;
@@ -81,19 +82,6 @@ body {
   color: gray; /* Change color on hover */
 }
 
-/* General setup for the body */
-body {
-  font-family: sans-serif;
-  font-weight: lighter;
-  background-color: white;
-  color: black;
-  margin: 0;
-  line-height: 1.5em;
-  display: flex;
-  height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 /* Menu Section */
 .text-section {
   width: 250px; /* Fixed width for the menu */
@@ -121,7 +109,7 @@ body {
 .menu a {
   color: black;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.0em;
   transition: color 0.3s ease;
 }
 .menu a:hover {
@@ -138,7 +126,7 @@ body {
   margin-bottom: 10px; /* Add space between sub-menu items */
 }
 .submenu a {
-  font-size: 1.2em; /* Smaller font for sub-menu items */
+  font-size: 0.8em; /* Smaller font for sub-menu items */
 }
 
 /* Content Container */
@@ -154,19 +142,16 @@ body {
 .content {
   display: none; /* Hide all content sections by default */
 }
+
+/* When the content is targeted (clicked) */
 .content:target {
-  display: block; /* Show the content section when it is the target */
-  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect */
+  display: block; /* Show the content */
+  padding-top: 30vh; /* Start content in the middle of the page */
 }
 
-/* Smooth fade-in effect */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+/* After the first scroll, it will become scrollable as normal */
+.content-container:target {
+  padding-top: 20px; /* Adjust padding after target to allow scrolling */
 }
 
 /* Mobile adjustments */
