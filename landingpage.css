@@ -14,8 +14,8 @@ body {
 .top-image-container {
     position: fixed; /* Fixes the position relative to the viewport */
     top: 0; /* Aligns it to the top of the page */
-    left: 50%; /* Aligns it horizontally at the center */
-    transform: translateX(-50%); /* Centers the image by shifting it half its width to the left */
+    left: 55%; /* Aligns it horizontally at the center */
+    transform: translateX(-45%); /* Centers the image by shifting it half its width to the left */
     z-index: 20; /* Ensures the image stays on top of other elements */
     width: 20%; /* Adjust this value for your desired image size */
     height: auto; /* Maintains aspect ratio */
