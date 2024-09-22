@@ -4,7 +4,7 @@ body {
     font-weight: lighter;
     font-size: 0.8em;
     background-color: white;
-    color: black;
+    color: #333015;
     margin: 0;
     line-height: 1.5em;
     display: flex;
@@ -49,7 +49,7 @@ body {
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 .title-container h1 a:hover {
-    color: gray; /* Change color on hover */
+    color: #cbcac4; /* Change color on hover */
 }
 
 /* all-time menu */
@@ -73,12 +73,12 @@ body {
     font-size: 2em; /* Increase font size for emphasis */
     font-weight: lighter;
     margin-bottom: 20px; /* Add spacing between words */
-    color: black;
+    color: #333015;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 .word-link:hover {
-    color: gray; /* Change color on hover */
+    color: #cbcac4; /* Change color on hover */
 }
 .bottom-word-container {
     position: fixed;
