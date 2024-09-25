@@ -42,12 +42,12 @@ body {
     z-index: 10; /* Ensures the title appears above other content */
 }
 .title-container h1 a {
-    color: #ff4f29; /* Initial color */
+    color: #cbcac4; /* Initial color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 .title-container h1 a:hover {
-    color: #cbcac4;
+    color: #502f3a;
 }
 
 /* all-time menu */
@@ -83,12 +83,12 @@ body {
 .bottom-word-container .word-link {
     font-size: 1.5em; /* Increase font size for emphasis */
     font-weight: lighter;
-    color: #ff4f29;
+    color: #cbcac4;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 .bottom-word-container .word-link:hover {
-    color: #cbcac4; /* Change color on hover */
+    color: #333015; /* Change color on hover */
 }
 
 
