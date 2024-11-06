@@ -151,6 +151,19 @@ body {
   overflow-y: auto; /* Allow scrolling for long content */
 }
 
+/* Link styling for all links in the content container */
+.content-container a {
+  text-decoration: none; /* Removes underline */
+  font-style: italic;
+  color: #502f3a; /* Default color for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links in the content container */
+.content-container a:hover {
+  color: #cbcac4; /* Change to desired color on hover */
+}
+
 /* Content Sections */
 .content {
   display: none; /* Hide all content sections by default */
@@ -166,6 +179,8 @@ body {
 .content-container:target {
   padding-top: 20px; /* Adjust padding after target to allow scrolling */
 }
+
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
