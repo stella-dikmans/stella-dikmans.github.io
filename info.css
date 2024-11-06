@@ -118,6 +118,7 @@ body {
     box-sizing: border-box; /* Include padding and border in width/height calculations */
 }
 
+
 /* Mobile version - Ensure responsiveness */
 @media (max-width: 768px) {
     .text-section {
