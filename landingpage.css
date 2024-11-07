@@ -10,9 +10,6 @@ body {
     height: 100vh;
 }
 
-
-
-
 /* Illustration */
 .top-image-container {
     position: fixed; /* Fixes the position relative to the viewport */
@@ -47,6 +44,7 @@ body {
 .title-container h1 a {
     color: #cbcac4; /* Initial color */
     text-decoration: none; /* Remove underline */
+    font-weight: lighter;
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
 .title-container h1 a:hover {
@@ -68,9 +66,9 @@ body {
 }
 .word-link {
     font-size: 2em; /* Increase font size for emphasis */
-    font-weight: bold;
+    font-weight: lighter;
     margin-bottom: 20px; /* Add spacing between words */
-    color: #333015;
+    color: #502f3a;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth transition on hover */
 }
