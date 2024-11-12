@@ -155,13 +155,13 @@ body {
 .content-container a {
   text-decoration: none; /* Removes underline */
   font-style: italic;
-  color: #502f3a; /* Default color for links */
+  color: #cbcac4; /* Default color for links */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hover effect for links in the content container */
 .content-container a:hover {
-  color: #cbcac4; /* Change to desired color on hover */
+  color: #502f3a; /* Change to desired color on hover */
 }
 
 /* Content Sections */

@@ -120,13 +120,13 @@ body {
 
 /* Info Content Container Link Styles */
 .info-content-container a {
-    color: #333015; /* Default link color */
+    color: #cbcac4; /* Default link color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .info-content-container a:hover {
-    color: #cbcac4; /* Hover color */
+    color: #502f3a; /* Hover color */
 }
 
 
