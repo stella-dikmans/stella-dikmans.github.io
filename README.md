@@ -1,2 +1,0 @@
-# portfolio
-portfoliosite @stella dikmans
