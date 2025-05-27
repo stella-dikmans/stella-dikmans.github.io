@@ -156,63 +156,57 @@ body {
     color: #333015; 
 }
 
-
 /* responsive design for all media */
-
-/* mobile (up to 600px) */
 @media (max-width: 600px) {
-    /* grid layout */
+    /* Layout becomes single-column */
     .container {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        grid-template-rows: auto 1fr auto; /* Header, content, and footer */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
     }
 
-    /* header */
+    /* Header styling */
     .header {
-        grid-column: span 1; /* Header takes full width */
-        justify-content: center; /* Center the content */
+        grid-column: span 1;
+        justify-content: flex-start; /* Match laptop layout */
+        align-items: center;
+        padding: 15px 20px;
     }
 
-    /* sidebar */
+    .brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .brand img {
+        width: 80px; /* Larger logo for mobile than before */
+        margin-right: 10px;
+    }
+
+    .brand-name {
+        font-size: 1.3rem; /* Slightly smaller for mobile */
+    }
+
+    /* Sidebar takes full width and stacks items */
     .sidebar {
-        min-width: 100%; /* Sidebar takes full width */
-        padding: 10px;
+        min-width: 100%;
+        padding: 15px 20px;
     }
 
     .sidebar a {
-        font-size: 1rem; /* Smaller font size */
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
 
-    /* sidebar bottom */
+    /* Bottom menu flows with layout, nicely spaced */
     .bottom-menu {
-        position: static; /* Place it within the flow of the content */
-        margin-top: 20px;
-    }
-}
-
-/* tablets (601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr 2fr; /* 2-column layout for tablet */
+        position: static;
+        margin-top: 30px;
+        padding-left: 20px;
     }
 
-    .header {
-        grid-column: span 2; /* Full width header */
-        justify-content: flex-start;
-    }
-
-    .sidebar {
-        min-width: 250px; /* Sidebar can be wider on tablets */
-    }
-}
-
-/* laptops (900px and above) */
-@media (min-width: 901px) {
-    .container {
-        grid-template-columns: 1fr 3fr; /* Two-column layout with wider sidebar */
-    }
-
-    .sidebar {
-        min-width: 250px;
+    .bottom-menu a {
+        font-size: 1rem;
+        margin-bottom: 15px;
     }
 }
