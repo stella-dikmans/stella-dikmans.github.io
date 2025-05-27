@@ -192,14 +192,6 @@ img {
         justify-content: center; /* Center the content */
     }
 
-    .logo img {
-        width: 40px; /* Smaller logo for mobile */
-    }
-
-    .name {
-        font-size: 1.2rem; /* Slightly smaller text */
-    }
-
     /* sidebar */
     .sidebar {
         min-width: 100%; /* Sidebar takes full width */
@@ -231,10 +223,6 @@ img {
     .sidebar {
         min-width: 250px; /* Sidebar can be wider on tablets */
     }
-
-    .name {
-        font-size: 1.4rem;
-    }
 }
 
 /* laptops (900px and above) */
@@ -245,9 +233,5 @@ img {
 
     .sidebar {
         min-width: 250px;
-    }
-
-    .name {
-        font-size: 1.5rem; /* Larger font size for bigger screens */
     }
 }
