@@ -30,27 +30,35 @@ body {
 .header {
     grid-column: span 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start; /* Align left */
     align-items: center;
     padding: 20px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-/* header colors */
-.name a {
-    color: #cbcac4; 
-    text-decoration: none; /* Remove underline */
+/* Combined logo + name link */
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 100px; /* Adjust logo size as needed */
+    margin-right: 10px;
+ }
+
+.brand-name {
+    font-size: 1.5rem;
+    color: #cbcac4;
     font-weight: lighter;
-    transition: color 0.3s ease; /* Smooth transition on hover */
-}
-.name a:hover {
-    color: #502f3a;
+    transition: color 0.3s ease;
 }
 
-.logo img {
-    width: 200px;
-    cursor: pointer;
-    margin-right: 20px;
+.brand:hover .brand-name {
+    color: #502f3a;
 }
 
 /* sidebar center and variable */
