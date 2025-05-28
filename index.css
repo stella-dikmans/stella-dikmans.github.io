@@ -108,31 +108,39 @@ body {
 }
 
 
-
 /* CONTENT */
 .content-container {
-  margin-right: 150px;
-  overflow-y: auto; /* Allow scrolling for long content */
+    margin-right: 150px;
+    overflow-y: auto; /* Allow scrolling for long content */
 }
 
 .content-container a {
-  text-decoration: none; 
-  font-style: italic;
-  color: #cbcac4; 
+    text-decoration: none; 
+    font-style: italic;
+    color: #cbcac4; 
 }
 
 .content-container a:hover {
-  color: #502f3a; 
+    color: #502f3a; 
 }
 
 .content {
-  display: none; 
+    display: none; 
 }
 
 .content:target {
-  display: block; /* Show the content */
-  padding-top: 10vh; /* Start content in the middle of the page */
+    display: block; /* Show the content */
+    padding-top: 10vh; /* Start content in the middle of the page */
 }
+
+/* links without styling */
+.content-container a.no-link-style {
+    text-decoration: none;
+    color: inherit;
+    font-style: inherit;
+}
+
+
 
 /* side-bar bottom left */
 .bottom-menu {
