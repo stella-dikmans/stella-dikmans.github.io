@@ -183,29 +183,59 @@ img {
     /* grid layout */
     .container {
         grid-template-columns: 1fr; /* Single column on mobile */
-        grid-template-rows: auto 1fr auto; /* Header, content, and footer */
+        grid-template-rows: auto auto 1fr auto; /* Added a row for sidebar */
+        display: block; /* Ensures content flows vertically */
     }
 
     /* header */
     .header {
-        grid-column: span 1; /* Header takes full width */
-        justify-content: center; /* Center the content */
+        grid-column: span 1;
+        justify-content: center;
+        padding: 10px;
     }
 
     /* sidebar */
     .sidebar {
-        min-width: 100%; /* Sidebar takes full width */
-        padding: 10px;
+        min-width: 100%;
+        padding: 10px 20px;
     }
 
-    .sidebar a {
-        font-size: 1rem; /* Smaller font size */
+    /* The main "projects" link */
+    .sidebar > ul > li > a {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    /* TINY SUBMENU: Compressed for space */
+    .submenu, .subsubmenu {
+        padding-left: 10px;
+    }
+
+    .submenu a, .subsubmenu a {
+        font-size: 0.65rem !important; /* Very small font */
+        line-height: 0.9em !important; /* Tight spacing between lines */
+        margin-bottom: 4px !important;  /* Tight spacing between items */
+        color: #cbcac4; 
+    }
+
+    /* Content Area adjustments */
+    .content-container {
+        margin-right: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* Hide the 3rd column "Title" images on mobile to prevent overlapping */
+    #titleone, #titletwo, .squared-image-right-container {
+        display: none !important;
     }
 
     /* sidebar bottom */
     .bottom-menu {
-        position: static; /* Place it within the flow of the content */
-        margin-top: 20px;
+        position: static;
+        margin-top: 40px;
+        padding: 20px;
+        border-top: 1px solid #eee;
     }
 }
 
